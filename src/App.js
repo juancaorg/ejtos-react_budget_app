@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Budget from "./components/Budget";
 import Remaining from "./components/Remaining";
 import ExpenseTotal from "./components/ExpenseTotal";
+import ExpenseList from "./components/ExpenseList";
 
 import { AppProvider } from "./context/AppContext";
 const App = () => {
@@ -19,6 +20,12 @@ const App = () => {
           </div>
           <div className="col-sm">
             <ExpenseTotal />
+          </div>
+        </div>
+        <h2 className="mt-3">Allocation</h2>
+        <div className="row">
+          <div className="col-sm">
+            <ExpenseList />
           </div>
         </div>
       </div>

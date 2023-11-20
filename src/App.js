@@ -1,11 +1,8 @@
 import React from "react";
-
 import "bootstrap/dist/css/bootstrap.min.css";
-
-//Code to import Budget.js
 import Budget from "./components/Budget";
+import Remaining from "./components/Remaining";
 
-// Add code to import the other components here under
 
 import { AppProvider } from "./context/AppContext";
 const App = () => {
@@ -16,6 +13,9 @@ const App = () => {
         <div className="row mt-3">
           <div className="col-sm">
             <Budget />
+          </div>
+          <div className="col-sm">
+            <Remaining />
           </div>
         </div>
       </div>
